@@ -1,0 +1,25 @@
+<md-sidenav-layout style="height: 100%">
+
+  <md-toolbar color="primary" class="large-toolbar">
+    <div class="toolbar-title">
+      <h2>HOW TODO</h2>
+    </div>
+  </md-toolbar>
+  <br>
+  <div class="tasks">
+      <md-input id="taskTitle" style="width: 400px" [(ngModel)]="newTask"
+      placeholder="I want to..."></md-input>
+      <button md-mini-fab color="accent" (click)="addTask()"><md-icon>done</md-icon></button>
+  </div>
+  <br>
+  <div class="taskList">
+    <md-card *ngFor="let task of getTasks()" class="card">
+      <md-card-content>
+        {{task.title}}
+      </md-card-content>
+      <md-card-actions>
+        <button md-mini-fab (click)="deleteTask(task.id)"><md-icon>clear</md-icon></button>
+      </md-card-actions>
+    </md-card>
+  </div>
+</md-sidenav-layout>
