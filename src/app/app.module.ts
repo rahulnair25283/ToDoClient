@@ -12,8 +12,7 @@ import { TasklistComponent } from './tasklist/tasklist.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent,
-    TasklistComponent
+    TaskComponent
   ],
   imports: [
     BrowserModule,

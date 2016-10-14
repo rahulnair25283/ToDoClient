@@ -1,5 +1,4 @@
 import {Component, OnInit, Inject, Input} from '@angular/core';
-import {TasklistComponent} from '../tasklist/tasklist.component';
 
 @Component({
   selector: 'app-task',
